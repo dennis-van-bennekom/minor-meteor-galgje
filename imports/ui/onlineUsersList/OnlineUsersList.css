@@ -1,0 +1,22 @@
+.userlist {
+  margin: 0 auto;
+  max-width: 30rem;
+}
+
+.userlist h1 {
+  text-align: center;
+}
+
+.userlist .user {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+}
+
+.userlist .user {
+  border-top: 1px solid #000;
+}
+
+.userlist .user:last-of-type {
+  border-bottom: 1px solid #000;
+}

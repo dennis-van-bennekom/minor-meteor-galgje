@@ -1,0 +1,11 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1rem;
+
+  font-family: sans-serif;
+}
