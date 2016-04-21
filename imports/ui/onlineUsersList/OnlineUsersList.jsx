@@ -5,10 +5,15 @@ import { createContainer } from 'meteor/react-meteor-data';
 import './OnlineUsersList.css';
 
 class OnlineUsersList extends Component {
+  
   handleChallenge(userId, event) {
     event.preventDefault();
+    
+    const word = this.refs.wordInput.value.trim();
 
-    Meteor.call('games.insert', userId, 'test');
+    this.refs.wordInput.value = '';
+
+    Meteor.call('games.insert', userId, word);
   }
 
   renderUserList() {
@@ -34,7 +39,15 @@ class OnlineUsersList extends Component {
 
     return (
       <section className="userlist">
-        <h1>Online</h1>
+        { this.props.currentUser ?
+            <div>
+              <h1>Word input</h1>
+              <input type="text" ref="wordInput" />
+             </div>
+          : '' 
+        }
+      
+        <h2>Online</h2>
 
         <div className="list">
           { this.renderUserList() }

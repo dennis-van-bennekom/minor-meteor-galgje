@@ -3,10 +3,6 @@
   max-width: 30rem;
 }
 
-.userlist h1 {
-  text-align: center;
-}
-
 .userlist .user {
   display: flex;
   justify-content: space-between;
