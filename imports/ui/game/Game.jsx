@@ -41,6 +41,8 @@ class Game extends Component {
     const game = this.props.game;
     const isPlayer = this.props.isPlayer;
     
+    document.title = 'Game started';
+    
     return (
       <div>
         { game ? 

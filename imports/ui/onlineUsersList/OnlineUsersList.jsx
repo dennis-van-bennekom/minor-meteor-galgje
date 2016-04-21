@@ -35,7 +35,7 @@ class OnlineUsersList extends Component {
   }
 
   render() {
-    this.renderUserList();
+    document.title = 'Galgje';
 
     return (
       <section className="userlist">
