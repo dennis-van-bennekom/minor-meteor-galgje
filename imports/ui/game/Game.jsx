@@ -62,6 +62,8 @@ class Game extends Component {
                 }
                 
                 <div className="guessed">{game.guessed}</div>
+                
+                <button onClick={this.end.bind(this)}>End game</button>
               </div>
             : '' }
             
