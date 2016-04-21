@@ -1,6 +1,8 @@
 .userlist {
   margin: 0 auto;
   max-width: 30rem;
+  
+  text-align: center;
 }
 
 .userlist .user {

@@ -13,6 +13,7 @@ class App extends Component {
     return (
       <div class="container">
         <header>
+          <h1>Meteor Galgje</h1>
           <AccountsUIWrapper />
         </header>
         

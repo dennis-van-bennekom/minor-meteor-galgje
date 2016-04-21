@@ -1,0 +1,12 @@
+.game {
+    text-align: center;
+}
+
+.game button {
+    margin-top: 1rem;
+}
+
+.game .guessed .inner {
+    margin-top: 1rem;
+    letter-spacing: 0.5rem;
+}

@@ -44,7 +44,7 @@ class Game extends Component {
     document.title = 'Game started';
     
     return (
-      <div>
+      <div class="game">
         { game ? 
           <section className="game">
             { game.state === 'playing' ?
@@ -63,7 +63,7 @@ class Game extends Component {
                   : ''
                 }
                 
-                <div className="guessed">{game.guessed}</div>
+                <div className="guessed"><strong>Guessed: </strong><span className="inner">{game.guessed}</span></div>
                 
                 <button onClick={this.end.bind(this)}>End game</button>
               </div>
